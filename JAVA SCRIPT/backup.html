@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- <button >click</button> -->
+
+  <h1 id="demo">hello</h1>
+
+
+  <!-- <div class="test">hi</div>
+  <div class="test">hi</div>
+  <div class="test">hi</div>
+  <div class="test">hi</div> -->
+
+    
+<section>hello</section>
+<section>kello</section>
+
+<!-- <button>submit</button>
+<button class="reset">reset</button> -->
+
+
+
+<button>submit</button>
+<div></div>
+<script>
+
+
+let btn=document.querySelector('button');
+btn.addEventListener('mouseout',()=>{
+ btn.style.color="orange"   
+})
+// function demo()
+// {
+//     document.body.style.backgroundColor="blue";
+// }
+
+// let btn=document.querySelector('button');
+// btn.onclick=()=>{
+//     document.body.style.backgroundColor="yellow";
+// }
+
+let btn1=document.querySelector('button');
+btn1.addEventListener('click',()=>{
+    document.body.style.backgroundColor="yellow";
+ 
+})
+
+    console.log(document);
+    // getElementBYID
+    let myId=document.getElementById('demo');
+    console.log(myId);
+    myId.innerHTML="good morning";
+    myId.innerHTML="<pre>good evening</p>";
+
+
+
+// let myClass=document.getElementsByClassName('test');
+// console.log(myClass);
+// myClass[2].style.backgroundColor="red";
+// myClass[0].style.backgroundColor="red";
+// myClass[1].style.backgroundColor="red";
+// myClass[3].style.backgroundColor="red";
+// myClass[0].innerHTML="suresh";
+// myClass[0].style.color="blue";
+
+let mytag=document.getElementsByTagName('section');
+console.log(mytag);
+
+
+let query=document.querySelectorAll('button');
+console.log(query);
+
+let table=document.createElement('table');
+console.log(table);
+let table1=document.createElement('tr');
+console.log(table1);
+table.innerHTML="content";
+table1.innerHTML="table row";
+// table.appendChild(table1);
+// document.body.appendChild(table)
+table.append("good night")
+table.append(table1)
+
+
+
+let obj={
+    id:101,
+    name:"hello"
+}
+console.log(obj);
+console.log(obj.id=200);
+let freez=Object.freeze(obj);
+console.log(obj.id=500);
+console.log(obj);
+console.log(freez);
+console.log(obj);
+
+
+let obj1={
+    name1:"xuz"
+}
+
+
+let entry=Object.entries(obj1,obj);
+console.log(entry);
+console.log(Array.isArray(entry));
+
+
+// let btn2=document.querySelector('button');
+// btn2.addEventListener('mouseover',()=>{
+//     document.body.style.backgroundColor="brown"
+// })
+
+
+</script>
+
+
+</body>
+</html>

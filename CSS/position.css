@@ -1,0 +1,42 @@
+div{
+    height: 700px;
+    width: 70%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+nav{
+    height: 150px;
+    width: 150px;
+    background-color: tomato;
+    position: relative;
+    top: 250px;
+    
+} 
+
+article{
+    height: 150px;
+    width: 150px;
+    background-color: olivedrab;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+
+aside{
+    height: 150px;
+    width: 150px;
+    background-color: plum;
+    position: fixed;
+    /* position: sticky; */
+}
+
+section{
+    height: 150px;
+    width: 150px;
+    background-color: cornsilk;
+}

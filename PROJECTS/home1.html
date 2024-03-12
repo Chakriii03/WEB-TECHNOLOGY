@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://media.istockphoto.com/id/1438581253/photo/closeup-of-an-ice-cream.webp?b=1&s=170667a&w=0&k=20&c=NOilOUx6XtjaQ6mCWSFbPar2rHgAgIORERh0nT19QMk="
+      type="image/x-icon"
+    />
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      nav {
+        height: 60px;
+        width: 100%;
+        background-color: brown;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        list-style: none;
+        cursor: pointer;
+        position: sticky;
+        top: 0;
+      }
+
+      #part {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 20%;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .fa-sharp {
+        margin-left: 10%;
+      }
+
+      body {
+        background-image: url("https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhbmR5JTIwaWNlJTIwY3JlYW18ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+      }
+      #cards {
+        position: relative;
+        top: 200px;
+      }
+
+      #menu h1 {
+        color: white;
+        font-size: 40px;
+        margin-top: 30vh;
+        margin-left: 20%;
+      }
+
+      #cards {
+        height: 70vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #cardone {
+        height: 65vh;
+        width: 30vw;
+        /* border: 5px solid blue; */
+        background-image: url("https://media.istockphoto.com/id/1150548246/photo/teen-girl-with-pink-eating-ice-cream-outdoors-in-summer.webp?b=1&s=170667a&w=0&k=20&c=grn_92iwLdRZAc1v58x1YabviM3TkJbpLU0V-72hp0U=");
+        background-repeat: no-repeat;
+        background-size: 30vw 32.5vh;
+        box-shadow: 10px 10px 10px black;
+      }
+      #cardtwo {
+        height: 65vh;
+        width: 30vw;
+        /* border: 5px solid blue; */
+        background-image: url("https://images.unsplash.com/photo-1534706936160-d5ee67737249?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3VwJTIwaWNlJTIwY3JlYW18ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+        background-repeat: no-repeat;
+        background-size: 30vw 32.5vh;
+        box-shadow: 10px 10px 10px black;
+      }
+      #cardthree {
+        height: 65vh;
+        width: 30vw;
+        /* border: 5px solid blue; */
+        background-image: url("https://media.istockphoto.com/id/1323369382/photo/collection-of-colorful-summer-frozen-desserts-bottom-border-on-a-pink-background.webp?b=1&s=170667a&w=0&k=20&c=NClnMva-RMpdVSxChD31WQNTapmQVb2UoyoK3op-3j8=");
+        background-repeat: no-repeat;
+        background-size: 30vw 32.5vh;
+        box-shadow: 10px 10px 10px black;
+      }
+
+      #cardone h1 {
+        position: relative;
+        top: 30vh;
+        left: 8vw;
+      }
+      #cardone p {
+        position: relative;
+        top: 30vh;
+        font-weight: 900;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        text-align: justify;
+      }
+      #cardtwo h1 {
+        position: relative;
+        top: 30vh;
+        left: 8vw;
+      }
+      #cardtwo p {
+        position: relative;
+        top: 30vh;
+        font-weight: 900;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        text-align: justify;
+      }
+      #cardthree h1 {
+        position: relative;
+        top: 30vh;
+        left: 8vw;
+      }
+      #cardthree p {
+        position: relative;
+        top: 30vh;
+        font-weight: 900;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <i
+        class="fa-sharp fa-solid fa-ice-cream fa-beat-fade fa-2xl"
+        style="color: #0d65e7"
+        >Cream</i
+      >
+      <div id="part">
+        <li>Home</li>
+        <li>Products</li>
+        <li>About Us</li>
+        <li>Help</li>
+      </div>
+    </nav>
+
+    <main id="menu">
+      <h1>
+        Ice cream is a frozen dessert typically made from milk or cream that has
+        been flavoured with a sweetener, either sugar or an alternative, and a
+        spice, such as cocoa or vanilla, or with fruit, such as strawberries or
+        peaches. Food colouring is sometimes added in addition to stabilizers.
+      </h1>
+    </main>
+
+    <section id="cards">
+      <div id="cardone">
+        <h1>Cone ice-cream</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+          iste at animi consequatur quisquam nisi, qui omnis sapiente tenetur
+          sequi, iusto saepe repellendus ex reprehenderit perferendis ipsam enim
+          exercitationem. Odio.
+        </p>
+      </div>
+      <div id="cardtwo">
+        <h1>Cup ice-cream</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          non tempora asperiores est nihil. Dolore, quidem ad dignissimos
+          consectetur voluptatem praesentium perferendis? Ex suscipit
+          perferendis quae! Repellendus vel quae magni.
+        </p>
+      </div>
+      <div id="cardthree">
+        <h1>Cone ice-cream</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+          quidem voluptas soluta totam id hic dolorum, unde obcaecati
+          dignissimos rem nesciunt itaque animi omnis accusantium illum esse ad,
+          fugiat dicta.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

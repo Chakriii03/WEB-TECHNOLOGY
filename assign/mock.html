@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Grid Layout</title>
+  <style>
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: blueviolet;
+ 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  width: 80%;
+  height: 60%;
+  
+}
+
+.box {
+  
+  background-color:burlywood;
+  background-image: url("/HTML/images/appu\ 3.jpg");
+  height: 600px;
+  width:500px;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+  </div>
+</body>
+</html>

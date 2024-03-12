@@ -1,0 +1,48 @@
+.carousel-item{
+    /* margin-left: 12%; */
+    position: relative;
+    left: 10%;
+}
+
+#btn{
+    background-color: transparent;
+    /* background-color: black; */
+    color: whitesmoke;
+    position: relative;
+    right: 55%;
+    top: 2vh;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 25px 5px;
+    transition: all 0.5s linear 0.5s;
+}
+
+#btn:hover{
+    background-color: antiquewhite;
+    color: black;
+    font-weight: 600;
+    transform: scale(1.2,1.2);
+}
+
+h3{
+    text-transform: capitalize;
+    color: antiquewhite;
+    margin-top: 10vh;
+    margin-left: 3vw;
+}
+
+#poster{
+    display: flex;
+    justify-content: space-around;
+}
+
+#poster img{
+    border-radius: 10px;
+    transition: all 0.8s linear 0.2s;
+}
+
+    
+#poster img:hover{
+    border: 10px solid white;
+    transform: scale(1.2,1.2);
+}

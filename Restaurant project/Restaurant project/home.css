@@ -1,0 +1,72 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  text-decoration: none;
+  color:black;
+  background-color: white;
+ 
+ 
+ }
+ 
+a{
+  text-decoration:none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  color:black;
+} 
+a:hover{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:orange;
+
+}
+ div a{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color:black;
+ text-decoration: none;
+ 
+ }
+ 
+ 
+ div{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color:black;
+ text-decoration: none;
+ }
+ div:hover{
+ color:orange;
+ }
+  
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Show the dropdown menu on hover */
+
+.items5:hover .dropdown-content {
+  display: block;
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let table=document.createElement('table');
+        console.log(table);
+        // table.id="demo";
+        // table.innerText="worst";
+
+        table.style.border="1px solid red";
+
+        tr1=document.createElement('tr');
+        console.log(tr1);
+        td1=document.createElement('td');
+        td1.style.border="1px solid red";
+        td2=document.createElement('td');
+        td2.style.border="1px solid red";
+        console.log(td1,td2);
+
+        tr1.append(td1,td2);
+        table.appendChild(tr1)
+        document.body.appendChild(table)
+
+        td1.innerText="Id";
+        td2.innerText="Name";
+
+        tr11=document.createElement('tr');
+        console.log(tr11);
+        td11=document.createElement('td');
+        td11.style.border="1px solid red";
+        td21=document.createElement('td');
+        td2.style.border="1px solid red";
+        console.log(td11,td21);
+
+        tr11.append(td11,td21);
+        table.appendChild(tr11);
+        document.body.appendChild(table);
+
+        td11.innerText="101";
+        td21.innerText="Chakri";
+
+
+
+
+        
+
+    </script>
+</body>
+</html>

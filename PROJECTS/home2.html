@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW India</title>
+    <link
+      rel="shortcut icon"
+      href="/Projects/BMW/bmwlogo.jpeg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+      }
+      #top {
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: -150px;
+        background-color: aqua;
+        color: black;
+        cursor: pointer;
+        border-bottom: 10px solid white;
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bolder;
+        position: relative;
+        position: sticky;
+        /* position: fixed; */
+        top: 0%;
+      }
+      #img {
+        position: relative;
+        left: 0%;
+        top: 20px;
+      }
+      #video {
+        position: relative;
+        top: -13px;
+      }
+      #top p {
+        background-color: crimson;
+        color: white;
+      }
+      aside {
+        font-size: 35px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: lighter;
+      }
+
+      #cards {
+        height: 70vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #cardone {
+        height: 65vh;
+        width: 30vw;
+        background-image: url("BMW/NxW_Home_ICON_STOCK_CAR.webp");
+        background-repeat: no-repeat;
+        background-size: 30vw 32.5vh;
+      }
+      #cardtwo {
+        height: 65vh;
+        width: 30vw;
+        background-image: url("/Projects/BMW/NxW_Home_ICON_USED_CAR.webp");
+        background-repeat: no-repeat;
+        background-size: 30vw 32.5vh;
+      }
+      #cardthree {
+        height: 65vh;
+        width: 30vw;
+        background-image: url("BMW/NxW_Home_ICON_CON.webp");
+        background-repeat: no-repeat;
+        background-size: 30vw 32.5vh;
+      }
+
+      #cardone aside {
+        position: relative;
+        top: 33vh;
+        left: 6vw;
+        font-size: 25px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: lighter;
+      }
+      #cardtwo aside {
+        position: relative;
+        top: 33vh;
+        left: 6vw;
+        font-size: 25px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: lighter;
+      }
+      #cardthree aside {
+        position: relative;
+        top: 33vh;
+        left: 7vw;
+        font-size: 25px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: lighter;
+      }
+      #cardone p {
+        height: 50px;
+        width: 130px;
+        position: relative;
+        left: 29%;
+        top: 60%;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #cardtwo p {
+        height: 50px;
+        width: 230px;
+        position: relative;
+        left: 22%;
+        top: 60%;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #cardthree p {
+        height: 50px;
+        width: 190px;
+        position: relative;
+        left: 27%;
+        top: 60%;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      #for {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        top: -7vh;
+        left: 0px;
+        color: white;
+        background-image: url("https://cdn.pixabay.com/photo/2016/04/21/22/49/suv-1344716_640.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        cursor: pointer;
+        font-size: 70px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      #for:hover {
+        color: red;
+      }
+      #for h1 {
+        height: 10vh;
+        width: 15vw;
+        border: 2px solid white;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: lighter;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+
+      #cars {
+        height: 100vh;
+        width: 100vw;
+      }
+      #one {
+        height: 100vh;
+        width: 50vw;
+        background-image: url("/Projects/BMW/iX_Banner_16to9.webp");
+        background-repeat: no-repeat;
+        background-size: 40vw 50vh;
+        position: relative;
+        left: 8%;
+      }
+      #two {
+        height: 100vh;
+        width: 50vw;
+        background-image: url("https://bmw.scene7.com/is/image/BMW/2560x1440:16to9?fmt=webp&wid=1504&hei=844");
+        background-repeat: no-repeat;
+        background-size: 40vw 50vh;
+        position: relative;
+        left: 8%;
+        top: -40%;
+      }
+      #one aside {
+        height: 1vh;
+        width: 40vw;
+        position: relative;
+        left: 50vw;
+        font-size: 30px;
+        font-style: italic;
+        font: unset;
+      }
+      #onep h {
+        font-size: 20px;
+        font-family: serif;
+        position: relative;
+        left: -15%;
+        font-style: oblique;
+      }
+      #onep h1 {
+        font-size: 45px;
+        position: relative;
+        left: -15%;
+        top: -500%;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: lighter;
+      }
+      #onep h6 {
+        font-size: 20px;
+        position: relative;
+        left: -15%;
+        top: -800%;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: lighter;
+        font-style: normal;
+      }
+      #onep div {
+        height: 8vh;
+        width: 13vw;
+        border: 2px solid black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 70%;
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        font-weight: bold;
+        position: relative;
+        top: -900%;
+        left: -15%;
+      }
+
+      #two aside {
+        height: 1vh;
+        width: 40vw;
+        position: relative;
+        left: 50vw;
+        font-size: 30px;
+        font-style: italic;
+        font: unset;
+      }
+      #twop h {
+        font-size: 20px;
+        font-family: serif;
+        position: relative;
+        left: -15%;
+        top: 500%;
+        font-style: oblique;
+      }
+      #twop h1 {
+        font-size: 45px;
+        position: relative;
+        left: -15%;
+        top: 100%;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: lighter;
+      }
+      #twop h6 {
+        font-size: 20px;
+        position: relative;
+        left: -15%;
+        top: -300%;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: lighter;
+        font-style: normal;
+      }
+      #twop div {
+        height: 8vh;
+        width: 13vw;
+        border: 2px solid black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 70%;
+        font-family: "Times New Roman", Times, serif;
+        font-style: normal;
+        font-weight: bold;
+        position: relative;
+        top: -400%;
+        left: -15%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <pre id="top">                    <img id="img"
+  src="/Projects/BMW/BMW_White_Logo.svg.asset.1670245093434.svg"
+  alt=""
+  height="50px"
+  width="50px"
+/>      Models     Electric     Configurator     Visit Online Shop     MoreBMW                                                                     <i class="fa-solid fa-cart-shopping" style="color: #e7eaee;"></i>     <i class="fa-solid fa-location-dot" style="color: #f5f7f9;"></i>     <i class="fa-solid fa-magnifying-glass" style="color: #f1f2f3;"></i>  &nbsp;
+<br><p>Sheer Driving <b>Pleasure</b></p></pre>
+    </nav>
+
+    <div id="video">
+      <video
+        src="/Projects/BMW/bmw video.mp4"
+        autoplay
+        muted
+        loop
+        height="100%"
+        width="100%"
+      ></video>
+    </div>
+    <center>SHOPPING TOOLS</center>
+    <br />
+    <center><aside>FIND YOUR OWN BMW.</aside></center>
+
+    <section id="cards">
+      <div id="cardone">
+        <aside>Find a New Car.</aside>
+        <p>Search Now</p>
+      </div>
+      <div id="cardtwo">
+        <aside>Book a Test Drive.</aside>
+        <p>Request a Test Drive</p>
+      </div>
+      <div id="cardthree">
+        <aside>Build Your Own.</aside>
+        <p>Configure & Price</p>
+      </div>
+    </section>
+    <article id="for">
+      <br /><br />
+      THIS IS FORWORDISM: <br />
+      THE 7. <br /><br />
+      <h1>KNOW MORE</h1>
+    </article>
+    <section id="cars">
+      <div id="one">
+        <aside id="onep">
+          <h>BMW ELECTRIFIED</h>
+          <h1>THE JOY OF ELECTRIC DRIVING</h1>
+          <h6>
+            100 % electric. 100 % driving pleasure. 100 % BMW. Experience an
+            entirely new sensation of sheer driving pleasure.
+          </h6>
+          <div>KNOW MORE</div>
+        </aside>
+      </div>
+      <div id="two">
+        <aside id="twop">
+          <h>BMW FINANCIAL SERVICES</h>
+          <h1>BMW Special Offers</h1>
+          <h6>
+            Check out a variety of BMW finance offers available across the BMW
+            range
+          </h6>
+          <div>KNOW MORE</div>
+        </aside>
+      </div>
+    </section>
+  </body>
+</html>

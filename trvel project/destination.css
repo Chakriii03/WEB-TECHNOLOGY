@@ -1,0 +1,50 @@
+
+h1{
+    font-weight: 900;
+    font-size: 70px;
+    text-align: center;
+    color:skyblue;
+    padding-top: 360px;
+
+}
+h2{
+    color:navy;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+p{
+    text-align: center;
+    color:w;
+    font-weight: bolder;
+}
+#menu3{
+background-image: url("deimg/d1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height:400px;
+}
+#one{
+    width:400px;
+    height:400px;
+    background-image: url('deimg/d2.jpg');
+    background-size: cover;
+}
+
+#two{
+    width:400px;
+    height:400px;
+    background-image: url('pimge/p3.jpg');
+    background-size: cover;
+}
+
+#three{
+    width:400px;
+    height:400px;
+    background-image: url('pimge/p5.jpg');
+    background-size: cover;
+}
+
+.img{
+    display: flex;
+}

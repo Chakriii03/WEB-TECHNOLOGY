@@ -1,0 +1,21 @@
+section {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    margin: auto;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: 4;
+}
+
+@keyframes box {
+    from {
+        background-color: yellow;
+    }
+
+    to {
+        background-color: red;
+    }
+}

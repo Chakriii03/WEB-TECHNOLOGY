@@ -1,0 +1,14 @@
+body{
+    background-color: skyblue;
+}
+#menu3{
+    background-image: url('pimge/p2.webp');
+    background-size:cover ;
+    width:900px;
+    height:600px;
+    border:5px solid white;
+    border-radius: 10px; 
+    margin-top:40px;
+    box-shadow: 5px 5px 5px 5px white;
+
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="">name</label>
+        <input type="text" id="name" name=""><br>
+
+        
+            <label for="">phone number</label>
+            <input type="text" id="phone" name=""><br>
+
+            <button type="submit">submit</button>
+    
+    </form>
+
+    <script>
+        let cc=document.querySelector('form')
+        cc.addEventListener('submit',(a)=>{
+            let id=document.getElementById('name').value;
+            let phone=document.getElementById('phone').value;
+            a.preventDefault();
+            console.log(id,phone);
+
+        })
+
+        // function change(){
+        //     let div=document.querySelector("div")
+        //     let username=document.querySelector('input').value
+
+        //     div.innerHTML=`<table border="1">
+        //         <tr>
+        //             <td>username</td>
+        //             <td>${username}</td>
+        //         </tr>
+        //         </table>`
+        // }
+    
+    </script>
+</body>
+</html>

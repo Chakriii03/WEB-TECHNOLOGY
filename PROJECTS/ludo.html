@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUDO</title>
+    <style>
+      body {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        /* display: flex; */
+        margin: 0%;
+      }
+      #yellow {
+        height: 500px;
+        width: 500px;
+        background-color: yellow;
+      }
+      #Green {
+        height: 500px;
+        width: 500px;
+        background-color: green;
+        margin-left: 62.5%;
+        margin-top: -37%;
+      }
+      #red {
+        height: 500px;
+        width: 500px;
+        background-color: red;
+        margin-top: 25.5%;
+      }
+      #blue {
+        height: 500px;
+        width: 500px;
+        background-color: blue;
+        margin-left: 62.5%;
+        margin-top: -37%;
+      }
+      article {
+        height: 70%;
+        width: 70%;
+        background-color: white;
+        position: relative;
+        top: 15.4%;
+        left: 14.9%;
+      }
+      #center {
+        height: 53vh;
+        width: 53vh;
+        background-color: aqua;
+        position: relative;
+        top: -130vh;
+        left: 37%;
+      }
+      #incir1 {
+        height: 20%;
+        width: 20%;
+        background-color: yellow;
+        position: absolute;
+        top: 8vh;
+        left: 8vh;
+        border-radius: 50px;
+      }
+      #incir2 {
+        height: 20%;
+        width: 20%;
+        background-color: yellow;
+        position: absolute;
+        top: 8vh;
+        left: 35vh;
+        border-radius: 50px;
+      }
+      #incir3 {
+        height: 20%;
+        width: 20%;
+        background-color: yellow;
+        position: absolute;
+        top: 35vh;
+        left: 8vh;
+        border-radius: 50px;
+      }
+      #incir4 {
+        height: 20%;
+        width: 20%;
+        background-color: yellow;
+        position: absolute;
+        top: 35vh;
+        left: 35vh;
+        border-radius: 50px;
+      }
+      #inn1 {
+        height: 20%;
+        width: 20%;
+        background-color: green;
+        position: absolute;
+        top: 6vh;
+        left: 8vh;
+        border-radius: 50px;
+      }
+      #inn2 {
+        height: 20%;
+        width: 20%;
+        background-color: green;
+        position: absolute;
+        top: 6vh;
+        left: 35vh;
+        border-radius: 50px;
+      }
+      #inn3 {
+        height: 20%;
+        width: 20%;
+        background-color: green;
+        position: absolute;
+        top: 33vh;
+        left: 8vh;
+        border-radius: 50px;
+      }
+      #inn4 {
+        height: 20%;
+        width: 20%;
+        background-color: green;
+        position: absolute;
+        top: 33vh;
+        left: 35vh;
+        border-radius: 50px;
+      }
+      #in1 {
+        height: 20%;
+        width: 20%;
+        background-color: red;
+        position: absolute;
+        top: 6vh;
+        left: 8vh;
+        border-radius: 50px;
+      }
+      #in2 {
+        height: 20%;
+        width: 20%;
+        background-color: red;
+        position: absolute;
+        top: 6vh;
+        left: 35vh;
+        border-radius: 50px;
+      }
+      #in3 {
+        height: 20%;
+        width: 20%;
+        background-color: red;
+        position: absolute;
+        top: 33vh;
+        left: 8vh;
+        border-radius: 50px;
+      }
+      #in4 {
+        height: 20%;
+        width: 20%;
+        background-color: red;
+        position: absolute;
+        top: 33vh;
+        left: 35vh;
+        border-radius: 50px;
+      }
+      #inncir1 {
+        height: 20%;
+        width: 20%;
+        background-color: blue;
+        position: absolute;
+        top: 6vh;
+        left: 8vh;
+        border-radius: 50px;
+      }
+      #inncir2 {
+        height: 20%;
+        width: 20%;
+        background-color: blue;
+        position: absolute;
+        top: 6vh;
+        left: 35vh;
+        border-radius: 50px;
+      }
+      #inncir3 {
+        height: 20%;
+        width: 20%;
+        background-color: blue;
+        position: absolute;
+        top: 33vh;
+        left: 8vh;
+        border-radius: 50px;
+      }
+      #inncir4 {
+        height: 20%;
+        width: 20%;
+        background-color: blue;
+        position: absolute;
+        top: 33vh;
+        left: 35vh;
+        border-radius: 50px;
+      }
+      #sma1 {
+        height: 18vh;
+        width: 18vh;
+        background-color: blue;
+        position: relative;
+        left: 80%;
+        top: -150vh;
+        border: 2px black solid;
+      }
+      #sma2 {
+        height: 18vh;
+        width: 18vh;
+        background-color: blue;
+        position: relative;
+        left: 80.1%;
+        top: -190.1vh;
+        border: 2px black solid;
+      }
+      #sma3 {
+        height: 18vh;
+        width: 18vh;
+        background-color: blue;
+        position: relative;
+        left: 71.3%;
+        top: -212vh;
+        border: 2px black solid;
+      }
+      #sma4 {
+        height: 18vh;
+        width: 18vh;
+        background-color: blue;
+        position: relative;
+        left: 62.5%;
+        top: -233.9vh;
+        border: 2px black solid;
+      }
+
+      #smaa1 {
+        height: 18vh;
+        width: 18vh;
+        background-color: red;
+        position: relative;
+        left: 37%;
+        top: -184.2vh;
+        border: 2px black solid;
+      }
+      #smaa2 {
+        height: 18vh;
+        width: 18vh;
+        background-color: red;
+        position: relative;
+        left: 46%;
+        top: -206vh;
+        border: 2px black solid;
+      }
+      #smaa3 {
+        height: 18vh;
+        width: 18vh;
+        background-color: red;
+        position: relative;
+        left: 46%;
+        top: -246vh;
+        border: 2px black solid;
+      }
+      #smaa4 {
+        height: 18vh;
+        width: 18vh;
+        background-color: red;
+        position: relative;
+        left: 46%;
+        top: -286.5vh;
+        border: 2px black solid;
+      }
+      #smaaa1 {
+        height: 18vh;
+        width: 18vh;
+        background-color: yellow;
+        position: relative;
+        left: 10.4%;
+        top: -361.5vh;
+        border: 2px black solid;
+      }
+      #smaaa2 {
+        height: 18vh;
+        width: 18vh;
+        background-color: yellow;
+        position: relative;
+        left: 19.2%;
+        top: -365.2vh;
+        border: 2px black solid;
+      }
+      #smaaa3 {
+        height: 18vh;
+        width: 18vh;
+        background-color: yellow;
+        position: relative;
+        left: 28%;
+        top: -387vh;
+        border: 2px black solid;
+      }
+      #smaaa4 {
+        height: 18vh;
+        width: 18vh;
+        background-color: yellow;
+        position: relative;
+        left: 10.4%;
+        top: -408.9vh;
+        border: 2px black solid;
+      }
+
+      #maaa1 {
+        height: 18vh;
+        width: 18vh;
+        background-color: green;
+        position: relative;
+        left: 53.5%;
+        top: -503vh;
+        border: 2px black solid;
+      }
+      #maaa2 {
+        height: 18vh;
+        width: 18vh;
+        background-color: green;
+        position: relative;
+        left: 44.7%;
+        top: -524.8vh;
+        border: 2px black solid;
+      }
+      #maaa3 {
+        height: 18vh;
+        width: 18vh;
+        background-color: green;
+        position: relative;
+        left: 44.7%;
+        top: -511.3vh;
+        border: 2px black solid;
+      }
+      #maaa4 {
+        height: 18vh;
+        width: 18vh;
+        background-color: green;
+        position: relative;
+        left: 44.7%;
+        top: -551vh;
+        border: 2px black solid;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="yellow">
+        <article id="white">
+          <aside id="incir1"></aside>
+          <aside id="incir2"></aside>
+          <aside id="incir3"></aside>
+          <aside id="incir4"></aside>
+        </article>
+      </div>
+      <div id="Green">
+        <article>
+          <h1 id="inn1"></h1>
+          <h1 id="inn2"></h1>
+          <h1 id="inn3"></h1>
+          <h1 id="inn4"></h1>
+        </article>
+      </div>
+      <div id="red">
+        <article>
+          <h2 id="in1"></h2>
+          <h2 id="in2"></h2>
+          <h2 id="in3"></h2>
+          <h2 id="in4"></h2>
+        </article>
+      </div>
+      <div id="blue">
+        <article>
+          <h3 id="inncir1"></h3>
+          <h3 id="inncir2"></h3>
+          <h3 id="inncir3"></h3>
+          <h3 id="inncir4"></h3>
+        </article>
+      </div>
+
+      <div id="center"></div>
+
+      <h4 id="sma1"></h4>
+      <h4 id="sma2"></h4>
+      <h4 id="sma3"></h4>
+      <h4 id="sma4"></h4>
+
+      <h4 id="smaa1"></h4>
+      <h4 id="smaa2"></h4>
+      <h4 id="smaa3"></h4>
+      <h4 id="smaa4"></h4>
+
+      <h4 id="smaaa1"></h4>
+      <h4 id="smaaa2"></h4>
+      <h4 id="smaaa3"></h4>
+      <h4 id="smaaa4"></h4>
+
+      <h4 id="maaa1"></h4>
+      <h4 id="maaa2"></h4>
+      <h4 id="maaa3"></h4>
+      <h4 id="maaa4"></h4>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+
+            /* transition-duration: all;
+            transition-duration: 5s;
+            transition-timing-function: linear;
+            transition-delay: 3s; */
+
+            transition: all 5s linear 3s; 
+             /* Shorthand property */
+
+            /* transition-property: width,height;
+            transition-duration: 3s,10s; 
+            transition-timing-function: linear,linear;
+            transition-delay: 0.5s,0.5s; */
+
+            transition: width 3s linear 0.5s,height,10s linear 0.5s;
+            position: relative;
+            left: 40%;
+            top: 40vh;
+
+        }
+
+        section:hover{
+            background-color: black;
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function callback()
+        {
+            console.log("might be");
+        }
+        function demo(a)
+        {
+        console.log("this is venkat home");
+        a();
+        }
+        demo(callback)
+
+
+        let add=(a,b)=>a+b;
+        let sub=(a,b)=>a-b;
+
+        let calculator=(p1,p2,test)=>{
+            return test(p1,p2)
+        }
+        console.log(calculator(10,20,add));
+        console.log(calculator(100,20,sub));
+    </script>
+    
+</body>
+</html>

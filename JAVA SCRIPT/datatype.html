@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=100;
+        console.log(num,typeof num);
+
+        let num1=100.1;
+        console.log(num1,typeof num1);
+
+        let num2=100/3;
+        console.log(num2,typeof num2);
+
+        let num3=Number(String);
+        console.log(num3,typeof num3);
+
+        let num4=Number("34");
+        console.log(num4,typeof num4);
+
+        let num5=Number("false");
+        console.log(num5,typeof num5);
+
+        let num6=Number(false);
+        console.log(num6,typeof num6);
+
+        let num7=Number("true");
+        console.log(num7,typeof num7);
+
+        let num8=Number(true);
+        console.log(num8,typeof num8);
+
+        let num9=Number("True");
+        console.log(num9,typeof num9);
+
+
+
+
+
+        console.log(5 + 5 + "5" - 5);
+        console.log(5 + 5 + "5" + 5);
+        console.log(5 + 5 + "5" + 10 + "hello" + null);
+        console.log(100 + null * 2);//null=0
+        console.log(56 * 10 + 10 + "hello" + null);
+        console.log(56 * 10 + 10 + "hello" - null);
+
+       /* STRINGS
+        1.Double quotes("");
+        2.Single quotes('');
+        3.Backtick(``);also called as template literals*/
+
+        let str="java script";
+        console.log(str,typeof str);
+
+        let str1='HTML';
+        console.log(str1,typeof str1);
+
+        let str2=`CSS`;
+        console.log(str2,typeof str2);
+
+
+
+
+        let a="web";
+        console.log(a,typeof a);
+
+        let b='web';
+        console.log(b,typeof b);
+
+        let c=`web`;
+        console.log(c,typeof c);
+
+        let empID=143;
+        let empSal=50000;
+        let empName="chakrii";
+
+        console.log(`the employee name ${empName} has an id ${empID} has getting salary ${empSal}`);
+
+        // let str=""hello"";(error)
+        // console.log(str);
+
+        let str4='"hello"';
+        console.log(str4);
+
+        let str5="'hello'";
+        console.log(str5);
+
+        let str6="`hello`";
+        console.log(str6,typeof str6);
+
+        // string methods(v.v important) (interview poq)
+
+        let myVar="guys please prepare apti otherwise smokeee";
+        console.log(myVar.length);//to check the length of the string
+
+        console.log(myVar.charAt("5"));//to see the character at the index of 5
+
+        console.log(myVar.indexOf("s"));//gives the index of the character s
+
+        console.log(myVar.concat(" definitely"),("for sure"));//it will concat the n number of string.
+
+        let myStd="im awesome";
+        console.log(myStd.includes('m'));//it checks the characters present in the string if it is then it is true otherwise false
+
+        console.log(myStd.slice(2,5));//it takes one or two arguments and if two arguments are there it includes first one excludes second one
+
+        console.log(myStd.split("").reverse().join(""));
+
+        // split-"converts string to an array";
+        // reverse-"reverse an string";
+        // join-"converts array to string"
+
+
+        console.log(myStd.slice(4));
+
+        console.log(myStd.split("").reverse().join(""));
+
+        console.log(myStd.lastIndexOf('a'));//from starting it will fetch the last 'a' character
+
+        let demo="    hello    "
+        console.log(demo.trim());
+        console.log(demo.trimStart());
+        console.log(demo.trimEnd());
+        console.log(demo.trimLeft());
+        console.log(demo.trimRight());
+
+        let test='4'
+        console.log(test.padStart(6,"0"));
+        console.log(test.padEnd(5,"1"));
+
+        let d="heloo";
+        console.log(d.replace('h','k'));
+
+        let str8="good morning";
+        console.log(str8.endsWith('g'));//checking the characters in the last
+
+        let str7="good morning";
+        console.log(str7.startsWith('g'));//checking the characters in the first
+
+        //Boolean
+
+        let varBoolean=true;
+        console.log(varBoolean,typeof varBoolean);
+
+        let varBoolean1=false;
+        console.log(varBoolean1,typeof varBoolean1);
+
+        let varBoolean2=Boolean("ganesh");
+        console.log(varBoolean2,typeof varBoolean2);
+
+        //note:
+        //apart from zero all are true
+
+        //BIGINT
+        //to store big value
+
+        // the number data type will store the value until 1.797693*10 raise to 308
+
+        // represent the BigInt by 'n'
+        let h=1n;
+        console.log(h,typeof h);
+
+        let bigNum=1008348951157545525958957925286372876n;
+        console.log(bigNum,typeof bigNum);
+
+        let bigNum1=BigInt("35");
+        console.log(bigNum1,typeof bigNum1);
+
+        //let bigNum2=BigInt("string");
+        //console.log(bigNum2,typeof bigNum2);error we cant convert string to bigint
+
+        let bigNum3=BigInt(false);//true
+        console.log(bigNum3,typeof bigNum3);
+
+        //undefined
+        //a variable does not have any value or missing an initialization
+
+        var purColor;
+        console.log(purColor);
+
+        //var purColor1=undefined(true);
+        //console.log(purColor1);//not  possible
+
+        //null
+
+        let age=null;
+        console.log(age,typeof null);
+
+        //null is an error or a bug?
+        //bcz null is p.d.t,the type of null is object,object is non p.d.t 
+
+        let age1=Number(null);
+        console.log(age1);//0
+        console.log(null+1);
+
+        let age2=String(null);
+        console.log(age2);
+
+        let age3=Boolean(null);
+        console.log(age3);
+
+        //let age4=BigInt(null);
+       // console.log(age4);//uncaught error we cannot convert null to bigint
+
+       let age5=BigInt(1);
+       console.log(age5);
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

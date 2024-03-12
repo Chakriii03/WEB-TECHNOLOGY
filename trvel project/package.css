@@ -1,0 +1,43 @@
+#i{
+    
+    width:30px;
+    height:40px;
+    letter-spacing: 14px;
+    color:navy;
+    background-color: skyblue;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+    }
+#main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+#one{
+    width:300px;
+    height:500px;
+    border:1px solid black;
+}
+h3{
+    padding-top: 20px;
+    color:navy;
+}
+p{
+    color:skyblue;
+}
+#b{
+    width:200px;
+    height:40px;
+    background-color: skyblue;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 20px;
+    margin-top: 30px;
+
+}
+button:hover{
+    background-image: linear-gradient(navy,skyblue);
+    color:white;
+
+}

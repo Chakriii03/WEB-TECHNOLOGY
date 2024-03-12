@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tofetchApi(){
+            let promise1=fetch(
+                "https://api.fiscaldata.treasury.gov/services/api/fiscal_service"
+
+            );
+            console.log(promise1);
+            let promise2=promise1.then(function(data)
+            {
+                console.log(data);
+                return data.json();
+            });
+            promise2.then((data1) =>{
+                console.log(data1);
+            });
+        }
+
+    </script>
+</body>
+</html>

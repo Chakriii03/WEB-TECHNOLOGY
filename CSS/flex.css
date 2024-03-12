@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    background-color: black;
+}
+
+#flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+    height: 600px;
+    width: 70vw;
+    background-color: yellow;
+    border: 5px double blue;
+    background-image: url("/HTML/images/flag.jpg");
+    background-repeat: no-repeat;
+    background-size: 70vw 600px;
+}
+
+.flex-items{
+    color: aqua;
+    height: 100px;
+    width: 100px;
+    background-color:red;
+    border: 3px solid blueviolet;
+    
+}
+
+#item1 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/HTML/images/flag.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 8; */
+    flex-basis: 200px;
+    align-self: center;
+    order: 5;
+
+}
+
+#item2 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/HTML/images/flag.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    /* flex-grow: 1; */
+    /* align-self: flex-end; */
+    order: 3;
+}
+
+
+#item3 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/HTML/images/flag.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    /* flex-grow: 2; */
+    /* align-self: flex-end; */
+    order: 1;
+}
+
+
+#item4 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/HTML/images/flag.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    /* flex-grow: 3; */
+    /* align-self: flex-end; */
+    order: 2;
+}
+
+
+#item5 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/HTML/images/flag.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    /* align-self: flex-end; */
+    order: 4;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    name <input type="text" name="" id="name1">
+    phone <input type="text" name="" id="num">
+    <aside>
+        <table>
+            <tr>
+                <th>Sl no</th>
+                <th>Name</th>
+                <th>Ph no</th>
+            </tr>
+        </table>
+    </aside>
+
+    <br>
+    <button>click</button>
+
+    <script>
+        var btnn=document.querySelector("button")
+        var aside=document.querySelector("aside")
+        var name1=document.querySelector("#name1")
+        var num1=document.querySelector("#num")
+        var tab=document.querySelector("table")
+
+        // console.log(tab);
+        // console.log(aside);
+
+    var num=0
+    btnn.addEventListener("click",()=>{
+        var namVal=name1.value;
+        var numVal=num1.value;
+        console.log(numVal,namVal);
+        num++
+
+        var tr=document.createElement("tr")
+        var td1=document.createElement("td")
+        var td2=document.createElement("td")
+        var td3=document.createElement("td")
+
+        tab.append(tr)
+        tr.append(td1,td2,td3)
+        td1.innerText=num;
+        td2.innerText=namVal;
+        td3.innerText=numVal;
+        })
+
+
+
+        btnn.addEventListener("click",()=>{
+            var namVal=name1.value;
+            var numVal=num1.value;
+            console.log(numVal,namVal);
+            num++
+            tab.innerHTML+=`    <tr>
+                <td>${num}</td>
+                <td>${namVal}</td>
+                <td>9${numVal}</td>
+                </tr>`
+        })
+
+
+    </script>
+    
+</body>
+</html>

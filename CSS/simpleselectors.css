@@ -1,0 +1,39 @@
+#para{
+    color: tomato;
+}
+
+.test{
+    background-color: rgb(184, 184, 138);
+}
+
+.demo{
+    background-color: red;
+}
+
+b{
+    color: lime;
+    background-color: blue;
+}
+
+h1{
+    color: antiquewhite;
+    background-color: black;
+}
+
+i,h2,h4{
+    color: tan;
+}
+
+*{
+ background-color: violet;
+ color: blanchedalmond;
+}
+
+#uni1{
+    background-color: red;
+    color: blue;
+}
+
+.uni2{
+    background-color: yellowgreen;
+}

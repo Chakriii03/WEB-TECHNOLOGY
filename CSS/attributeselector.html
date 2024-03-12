@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selector</title>
+    <style>
+        input[placeholder]
+        {
+         background-color: blueviolet;
+         height: 5vh;
+         width: 20vw;
+        }
+
+        input[placeholder="text here"]
+        {
+            background-color: yellow
+        }
+
+        ::placeholder{
+            color: white;
+            font-weight: bold;
+            position: relative;
+            left: 5vw;
+        }
+    </style>
+</head>
+<body>
+    <input id="demo" type="text" placeholder="type here"><br><br>
+
+    <input id="test" type="text" placeholder="text here">
+</body>
+</html>
